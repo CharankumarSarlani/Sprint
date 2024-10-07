@@ -1,0 +1,33 @@
+3 7 
+seq_location:68
+seq_length:2
+cycle_location:123
+cycle_length:3
+
+seq_len=0:4 seq_length zero stop
+3 start
+zero:0
+n1:0 one:1
+n2:1 counter:0 cyclecounter:0 counter1:0
+
+
+start:7  cycle_location cycle_location_copy
+seqcopy:7 seq_location seq_location_copy
+0 0 counter1
+
+cyclecounter_check:4   cycle_length cyclecounter stop
+7 seq_location_copy:0 cycle_location_copy:0
+1 counter1  one counter1
+1 cyclecounter one cyclecounter 
+
+4 counter counter1 comehere
+
+1 seq_location_copy one seq_location_copy
+comehere:1 cycle_location_copy one cycle_location_copy
+4 counter1 seq_length seqcopy
+3 cyclecounter_check
+stop:9
+
+0 0 0 0 0 4 5
+  
+
