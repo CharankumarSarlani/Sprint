@@ -1,0 +1,41 @@
+3 5 
+first_element_location:100 n:10
+4 n zero stop
+7 3 first_element_location_copy
+7 3 first_element_location_copy1
+
+
+3 edgecases
+prev_value:0 cur_value:1 zero:0 n_value:0 current_term:0 one:1
+
+
+edgecases:7 zero first_element_location_copy:0 
+1 current_term one current_term
+
+1  first_element_location_copy
+one first_element_location_copy1
+4 current_term n stop
+
+7 one first_element_location_copy1:0 
+1 current_term one current_term
+
+4 current_term n stop
+1  first_element_location_copy1
+one first_element_location_copy2
+
+start:1 prev_value cur_value n_value 
+
+
+
+7 n_value first_element_location_copy2:0
+
+7 cur_value prev_value
+7 n_value cur_value 
+1 current_term one current_term
+
+1  first_element_location_copy2
+one first_element_location_copy2
+
+4 current_term n stop
+3 start
+stop:9
