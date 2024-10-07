@@ -1,0 +1,22 @@
+3 5 
+number:53 result:1 
+7 number dividend
+3 start
+dividend:0 sum:0 divisor:10 quotient:0 ten:10 one:1
+
+start:5 number ten lessthan<10
+
+division:2 dividend divisor dividend
+1 quotient one quotient 
+
+dd<dv:5 dividend divisor summation
+3 division
+summation:1 sum dividend sum
+7 quotient dividend
+5 quotient ten final_sum
+0 0 quotient
+3 dd<dv
+final_sum:1 sum quotient result 
+stop:9
+lessthan<10:7 number result
+9
