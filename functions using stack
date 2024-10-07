@@ -1,0 +1,45 @@
+3 top<-stack_loc 
+stack_start_location:100
+one:1
+result:0
+popEle:0
+addition:0 funcInstr returnFromPop
+         3 popFunc
+         funcInstr:7 popEle returnAftAdd
+         0 funcNxtInstr returnFromPop 
+         3 popFunc
+         funcNxtInstr:7 popEleAddr operand1
+                      0 funcNxtInstr2 returnFromPop 
+                      3 popFunc
+         funcNxtInstr2:7 popEleAddr operand2
+                       0 funcNxtInstr3 returnFromPop 
+                       3 popFunc
+         funcNxtInstr3:1 operand1:0 operand2:0 result
+                       3 returnAftAdd:0
+         
+
+top<-stack_loc:7 stack_start_location top
+
+start:0 10 pushEle
+      0 nxtInstr returnAddr
+      3 pushFunc
+      nxtInstr:0 20 pushEle
+               0 nxtInstr2 returnAddr
+               3 pushFunc 
+      nxtInstr2:0 nxtInstr3 pushEle
+                0 returnToAdd returnAddr
+                3 pushFunc
+                returnToAdd:3 addition
+      nxtInstr3:9
+      
+
+
+pushFunc:0 pushEle:0 top:0
+          1 top one top
+          3 returnAddr:0
+
+popFunc:2 top one top
+        5 top stack_start_location jump
+        7 top popEleAddr
+        7 popEleAddr:0 popEle
+        jump:3 returnFromPop:0
